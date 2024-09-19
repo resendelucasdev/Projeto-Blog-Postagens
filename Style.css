@@ -1,0 +1,104 @@
+/* Estilo geral do corpo */
+body {
+  background-color: #2c3e50; /* Fundo mais escuro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Container principal para as postagens */
+.post-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Espaçamento entre os posts */
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Estilo individual do item de post */
+.post-item {
+  background-color: #FFFFFF;
+  border-radius: 15px; /* Bordas arredondadas */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  flex: 1; /* Faz com que todos os posts tenham o mesmo tamanho */
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição para o efeito hover */
+}
+
+/* Efeito hover */
+.post-item:hover {
+  transform: translateY(-10px); /* Move o post levemente para cima */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Aumenta a sombra no hover */
+}
+
+/* Estilo da imagem do post */
+.post-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/* Conteúdo do post */
+.post-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.post-content h2 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #333;
+}
+
+/* Autor do post */
+.post-author {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.author-image {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Estatísticas do post (comentários e visualizações) */
+.post-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.post-stats span {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .post-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .post-item {
+      width: 90%;
+      margin-bottom: 20px;
+  }
+}
+
