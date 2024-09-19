@@ -1,4 +1,5 @@
 Descrição do Código
+
 Este código implementa uma página de blog simples utilizando HTML e CSS. O objetivo é apresentar três posts lado a lado com design moderno, responsivo e com interação por meio de efeitos visuais.
 
 Principais pontos:
